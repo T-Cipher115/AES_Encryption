@@ -41,7 +41,7 @@ if __name__ == "__main__":
     # 1. On lance l'attaque et on récupère la clé
     cle_sauvee = chiffrer_fichier() 
     
-    input("\n La cible est verrouillée ! Appuie sur ENTRÉE pour lancer l'antidote...")
+    input("Appuyez sur entrée pour soigner le virus T...")
     
     # 2. On lance l'antidote avec la clé sauvée
     déchiffrer_fichier(cle_sauvee)
