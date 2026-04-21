@@ -13,15 +13,15 @@ def chiffrer_fichier(file_name = "secret.txt"):
        #On passe cette Variable dans la fontion d'Encryption
        données_chiffrés = machine_aes.encrypt(données_à_chiffrer)
        print(f"Le chiffrement du fichier est terminé")
-#Une fois les données chiffrés ont les stockes dans un nouveau fichier
+    #Une fois les données chiffrés ont les stockes dans un nouveau fichier
     with open (file_name,"wb") as fichier_verrouillé :
         fichier_verrouillé.write(données_chiffrés)
-#On retourne la clé
+    #On retourne la clé
     return ma_cle
 
 if __name__ == "__main__":
     print("Lancement du crypteur...")
     
-    # Le chef d'orchestre lance la fonction et récupère la clé dans une boîte !
+    #Clé deverouillage
     cle_secrete = chiffrer_fichier() 
     
