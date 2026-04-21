@@ -36,7 +36,7 @@ def déchiffrer_fichier(cle_secrete, file_name="secret.txt"):
         print(f"Données restaurées avec succès !")
 
 if __name__ == "__main__":
-    print("☠️ Lancement du crypteur T-Cipher115...")
+    print("Lancement du crypteur T-Cipher115...")
     
     # 1. On lance l'attaque et on récupère la clé
     cle_sauvee = chiffrer_fichier() 
